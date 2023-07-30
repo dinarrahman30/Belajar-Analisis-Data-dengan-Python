@@ -1,0 +1,7 @@
+Librari python yang dipakai ada
+1. pandas
+2. matplotlib
+3. streamlit
+4. seaborn
+5. numpy
+6. os
