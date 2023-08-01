@@ -1,5 +1,4 @@
 # Proyek Analisis Data: Bike Sharing 
-Link Streamlit Cloud : [Bike Sharing Dashboard](https://dinarrahman30.streamlit.app/)
 
 ## Preview
 ![Preview Dashboard Streamlit](https://github.com/dinarrahman30/Belajar-Analisis-Data-dengan-Python/assets/68122380/1290fee5-f546-4890-af7a-61d4da6f6f09)
