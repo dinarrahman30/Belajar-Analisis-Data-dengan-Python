@@ -6,7 +6,7 @@ from pathlib import Path
 
 sns.set(style='dark')
 
-
+st.subheader("Data")
 def by_workingday_df(df):
     byworkingday_bike = df.groupby(by="workingday").instant.nunique().reset_index()
     byworkingday_bike.rename(columns={"instant": "sum"}, inplace=True)
@@ -91,5 +91,5 @@ ax.tick_params(axis="y", labelsize=15)
 st.pyplot(fig)
 
 if __name__ == "__main__":
-    copyright = "Copyright © " + "2023 | Bike Sharing Dashboard | All Rights Reserved | " + "Made by : by [@Dinar Wahyu Rahman](https://https://www.linkedin.com/in/dinar-wahyu-rahman-00a405162/)"
+    copyright = "Copyright © " + "2023 | Bike Sharing Dashboard | All Rights Reserved | " + "Made by: [@dinar_wahyu](https://https://www.linkedin.com/in/dinar-wahyu-rahman-00a405162/)"
     st.caption(copyright)
