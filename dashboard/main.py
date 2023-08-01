@@ -18,6 +18,8 @@ def by_weather(df):
 
     return byseason_bike
 
+day_bike = pd.read_csv("dashboard.csv")
+
 with st.sidebar:
     # Menambahkan logo perusahaan
     st.image("https://www.brandcrowd.com/blog/wp-content/uploads/2019/06/bike-share.png")
@@ -59,10 +61,6 @@ if __name__ == "__main__":
     sns.set(style="white")
 
     st.header("Bike Sharing Dashboard: bike: ")
-
-    day_bike_csv = Path(__file__).parents[1] / 'D:/dashboard.csv'
-
-    day_bike = pd.read_csv(day_bike_csv)
 
     copyright = "Copyright © " + "2023 | Bike Sharing Dashboard | All Rights Reserved | " + "Made by : by [@Dinar Wahyu Rahman](https://https://www.linkedin.com/in/dinar-wahyu-rahman-00a405162/)"
     st.caption(copyright)
