@@ -4,12 +4,14 @@ import seaborn as sns
 import streamlit as st
 from pathlib import Path
 
+
 def by_workingday(df):
     byworkingday_bike = day_bike.groupby(by="workingday").instant.nunique().reset_index()
     byworkingday_bike.rename(columns={"instant": "sum"}, inplace=True)
     byworkingday_bike
 
     return byworkingday_bike
+
 
 def by_weather(df):
     byseason_bike = day_bike.groupby(by="weathersit").instant.nunique().reset_index()
@@ -18,11 +20,13 @@ def by_weather(df):
 
     return byseason_bike
 
+
 day_bike = pd.read_csv("dashboard.csv")
 
 with st.sidebar:
     # Menambahkan logo perusahaan
     st.image("https://www.brandcrowd.com/blog/wp-content/uploads/2019/06/bike-share.png")
+
 
 def workingday(df):
     st.subheader("Working Day")
@@ -39,6 +43,7 @@ def workingday(df):
     ax.tick_params(axis="x", labelsize=20)
     ax.tick_params(axis="y", labelsize=15)
     st.pyplot(fig)
+
 
 def weather(df):
     st.subheader("Weather")
