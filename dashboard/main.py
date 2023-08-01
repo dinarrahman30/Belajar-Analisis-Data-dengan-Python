@@ -55,10 +55,6 @@ def weather(df):
     st.pyplot(fig)
 
 
-with st.sidebar:
-    # Menambahkan logo perusahaan
-    st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
-
 if __name__ == "__main__":
     sns.set(style="white")
 
