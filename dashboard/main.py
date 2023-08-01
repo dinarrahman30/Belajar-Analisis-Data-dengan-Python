@@ -20,7 +20,7 @@ def by_weather(df):
 
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
+    st.image("https://www.brandcrowd.com/blog/wp-content/uploads/2019/06/bike-share.png")
 
 def workingday(df):
     st.subheader("Working Day")
