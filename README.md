@@ -1,7 +1,7 @@
 # Proyek Analisis Data: Bike Sharing 
 
 ## Preview
-![Preview Dashboard Streamlit](https://github.com/dinarrahman30/Belajar-Analisis-Data-dengan-Python/assets/68122380/1290fee5-f546-4890-af7a-61d4da6f6f09)
+![Preview Dashboard Streamlit](https://github.com/dinarrahman30/Belajar-Analisis-Data-dengan-Python/assets/68122380/4e926b3d-3f1e-4308-8f0b-42d6396a7842)s
 
 
 ## Project installation to personal virtual environment
