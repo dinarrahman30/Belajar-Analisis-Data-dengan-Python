@@ -90,6 +90,23 @@ ax.tick_params(axis="x", labelsize=20)
 ax.tick_params(axis="y", labelsize=15)
 st.pyplot(fig)
 
+# kondisi lingkungan yang mempengaruhi pengguna bike sharing
+st.subheader("Berdasarkan Temperatur")
+fig, ax = plt.subplots(figsize=(20,10))
+sns.regplot(x=day_bike["temp"], y=day_bike["cnt"])
+ax.set_title("Bagaimana kondisi lingkungan terhadap banyaknya pengguna bike sharing?", loc="center", fontsize=15)
+ax.set_xlabel("Normalized temperature in Celsius")
+ax.set_ylabel("Total User Casual and Registered")
+st.pyplot(fig)
+
+st.subheader("Berdasarkan Feeling Temperatur")
+fig, ax = plt.subplots(figsize=(20,10))
+sns.regplot(x=day_bike["atemp"], y=day_bike["cnt"])
+ax.set_title("Bagaimana kondisi lingkungan terhadap banyaknya pengguna bike sharing?", loc="center", fontsize=15)
+ax.set_xlabel("Normalized feeling temperature in Celsius")
+ax.set_ylabel("Total User Casual and Registered")
+st.pyplot(fig)
+
 if __name__ == "__main__":
     copyright = "Copyright © " + "2023 | Bike Sharing Dashboard | All Rights Reserved | " + "Made by: [@dinar_wahyu](https://https://www.linkedin.com/in/dinar-wahyu-rahman-00a405162/)"
     st.caption(copyright)
